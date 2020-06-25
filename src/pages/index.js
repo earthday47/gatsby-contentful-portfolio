@@ -3,13 +3,13 @@ import React from "react"
 import Cards from "../components/Cards"
 import Hero from "../components/Hero"
 import Layout from "../layouts/Layout"
-import Newsletter from "../components/Newsletter"
+import ContactForm from "../components/ContactForm"
 import SiteMetadata from "../components/SiteMetadata"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SiteMetadata title="Home" description="Portfolio of John Doe" />
+      <SiteMetadata title="Home" description="Drupal and React Web development, technical architect, multilingual translation | WesJones.net" />
 
       <Hero />
 
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
           <div className="container">No projects found.</div>
         )}
       </div>
-      <Newsletter />
+      <ContactForm />
     </Layout>
   )
 }

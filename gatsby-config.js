@@ -13,17 +13,16 @@ module.exports = {
     menu: [
       { name: "Home", to: "/" },
       { name: "About", to: "/about" },
+      { name: "Work", to: "/work" },
     ],
     links: {
-      facebook: "https://www.facebook.com/",
-      instagram: "https://www.instagram.com/",
-      pinterest: "https://pinterest.com/",
-      twitter: "https://twitter.com/",
+      github: "https://github.com/earthday47",
+      linkedin: "https://www.linkedin.com/in/wes-jones-2919b5b",
     },
     locale: "en",
-    title: `John Doe`,
-    description: `Photography portfolio of John Doe`,
-    author: `@johndoe`,
+    title: `Wes Jones`,
+    description: `The professional website of Wes Jones`,
+    author: `@earthday47`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -46,21 +45,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: process.env.MAILCHIMP_ENDPOINT,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe`,
-        short_name: `johndoe`,
+        name: `WesJones.net`,
+        short_name: `wesjonesnet`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#3182ce`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
   ],
